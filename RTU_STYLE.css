@@ -1,0 +1,435 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    font-size: 62.5%;
+    overflow-x:hidden ;
+    /* 1 rem = 10px */
+    /* 1 em=16px */
+
+}
+body{
+    overflow-x:hidden ;
+}
+.logo{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2px;
+    font-size: 20px;
+    font-family: "Calibri";
+    justify-content: flex-start;
+    height: 60px;
+    overflow: auto;
+    margin-left: 50px;    
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.navi{
+    display: flex;
+    justify-content:flex-start;
+    background-color: rgb(255, 193, 85);
+    color:rgb(20, 22, 57);
+    align-items:center;
+    height: 5rem;
+    padding:0 5rem;
+  
+}
+.nav-1{
+   
+    color:rgb(20, 22, 57);
+}
+a{
+    text-decoration: none;
+}
+.navlist
+{
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+    gap: 5rem;
+    align-items:center;
+    font-size: 1.5rem;
+    cursor: pointer;
+   
+}
+/* Dropdown Button */
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-style: outset;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
+.nav-1:hover{
+    color: rgb(255, 255, 255);
+    /* transform: translateY(-0.5rem);
+    transform: scale(1.2); */
+    transition: all 0.3s;
+   }
+   .nav-1:active{
+       color:rgb(255, 0, 0);
+   }
+   .btn{
+       border-radius:20px;
+       width:8rem;
+       height:3rem;
+       background-color:rgb(253, 253, 253);
+       border-color: white;
+       color: rgb(0, 0, 0);
+       border-width:1px;
+       cursor: pointer;
+   
+   }
+   
+   .btn:active{
+    color:rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
+
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    gap: 20px;
+    box-sizing: border-box;
+    /* height: max-content; */
+    
+
+}
+ #cardmain .card-body {
+    min-height: 270px!important;
+   
+    /* min-block-size: 60%; */
+ 
+} 
+.customBg .card-body {
+    background: #c01414;
+}
+.card-body {
+    -ms-flex: 1 ;
+    flex: 1;
+    margin-top: 30px;
+    padding: 15px;
+    position: relative;
+    height: 310px;
+    /* height: max-content; */
+    width: 272px;
+    /* margin-left: 70px; */
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #5a6e86;
+    text-align: left;
+    background-color: #eff1f4;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-style: outset;
+    box-shadow: #4b5d73;
+    border-radius: 2%;cursor: pointer;
+}
+.card-body:hover{
+    box-shadow: 0.1px 0.1px 20px rgb(203, 203, 203);
+    transition: all 0.01s;
+}
+/* Split the screen in half */
+/* .card-body {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  } */
+  .item-card2 {
+    right: 0;
+    /* background-color: red; */
+  }  
+.mb-2:hover{
+    color:rgb(226, 140, 35);
+    /* transform: translateY(-0.5rem);
+    transform: scale(1.2); */
+    transition: all 0.3s;
+   cursor: pointer;
+
+   }
+   .mb-2:active{
+    
+    color: rgb(217, 217, 225);
+}
+.section1{
+   height: 100%;
+   width: 100%;
+}
+.admin{
+    height: 150px;
+    background-color: rgb(32, 56, 82);
+    color: #ffffff;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+    font-family: nunito,sans-serif;
+    font-weight: 700;
+   
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4b5d73;
+    text-align: left;
+    background-color: #f4f5f7;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.item2-gl .tab-content {
+    padding-top: 1.5rem;
+    text-align: initial;
+    /* background-color: rgb(219, 223, 225); */
+}
+.table1-hover{
+  
+    background-color: #eae9e9;
+    /* display: flex;
+    justify-content: center; */
+}
+.table1-hover td {
+    padding: 10px;
+    border: 1px solid rgb(116, 24, 24);
+    font-size: 13px;
+    width: 14% 34% 34%;
+}
+.section2{
+    height: 100%;
+    width: 100%;
+ }
+ .Library{
+     height: 150px;
+     background-color: rgb(32, 56, 82);
+     color: #ffffff;
+     font-size: 30px;
+     display: flex;
+     justify-content: space-around;
+     padding-top: 60px;
+     font-family: nunito,sans-serif;
+     font-weight: 700;
+    
+ }
+ 
+.mtitle {
+    font-size: 20px;
+    color: #f0f0f0;
+    margin: 10px 30px 0 30px;
+    padding-left: 10px;
+    background: #272626;
+    padding: 10px;
+    height: 80px;
+
+    text-transform: uppercase;
+    border-left: 15px solid #f7bd3d;
+    border-right: 15px solid #f7bd3d;
+    font-family: Arial,Helvetica,sans-serif;
+    text-align: center;
+    font-weight: 700;
+}
+ .libphoto{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+   
+    box-sizing: border-box;
+ }
+
+    
+    .tab-menu-heading {
+       
+        list-style:none;
+        /* gap: 70px; */
+        align-items:center;
+        /* font-size: 1.5rem; */
+        cursor: pointer;
+    padding: 20px 30px 20px 30px;
+    border: 1px solid #e6e6e6;
+    border-bottom: 0;
+    /* box-sizing: border-box; */
+  
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    /* color: #4b5d73; */
+    text-align: left;
+    background-color: #d3d3d8;
+    font-family: nunito,sans-serif;
+    font-feature-settings: "liga" 0;
+}
+.tabs-menu li{
+    display: inline-block;
+    justify-content: space-between;
+   margin: 0 30px 0 30px;
+   
+    /* text-align: -webkit-match-parent; */
+
+}
+
+
+/* .tabs-menu ul li .active {
+    background: #05325e !important;
+    border-left: 10px solid #F7BD3D;
+    border-right: 10px solid #F7BD3D;
+    border-radius: 0px;
+    color: #fff;
+} */
+tabs-menu ul li a {
+    padding: 10px 12px 11px 20px;
+}
+/* .tab1:hover{
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+} */
+/* .tabs-menu ul li:hover{
+    color: rgb(255, 255, 255);
+    /* transform: translateY(-0.5rem);
+    transform: scale(1.2); */
+    /* transition: all 0.3s; */
+   /* } */ 
+   
+/* .item2-gl .tab-content {
+    padding-top: 1.5rem;
+    text-align: initial;
+} */
+.tabs-menu-body {
+    padding: 15px;
+    border: 1px solid #e0e8f3;
+    display: block;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #4b5d73;
+    text-align: left;
+    background-color: #f2f5f9;
+    font-family: nunito,sans-serif;
+}
+.tab-content h4{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px 30px 0 30px;
+    color: rgb(50, 71, 86);
+    text-decoration: underline;
+    /* display: flex;
+    justify-content:center; */
+}
+
+
+.tab-content ul{
+    font-size: 15px;
+    font-weight: 700;
+    margin:2px 30px 0px 30px; 
+    padding: 0 0 10px 16px; 
+    line-height: 26px;
+     list-style-type: disc;
+}
+.tab-content ol{
+    font-size: 15px;
+    font-weight: 700;
+    margin:2px 30px 0px 30px; 
+    padding: 0 0 10px 16px; 
+    line-height: 26px;
+     /* list-style-type: disc; */
+}
+/* .tabcontent table{
+    /* width: 50% 30% 20%; */
+    /* margin:2px 30px 0px 30px;
+    width: 80%; */
+    .tableborder{
+        width:95%; 
+        margin:2px 30px 5px 30px;
+        text-align:center;
+    }
+    .tableborder th {
+        height: 40px;
+        font-size: 20px;
+        
+    }
+    .tableborder td{
+        height: 30px;
+      
+        
+        /* display: flex; */
+        /* justify-content: space-around; */
+    }
+    .login_form{
+        font-size: 30px;
+        font-weight: 300;
+        margin:40px 40px 0px 400px; 
+        padding: 40px 0 40px 0px; 
+        line-height: 26px;
+        font-family:Arial, Helvetica, sans-serif;
+        
+        /* display:flex; */
+        justify-content:center;
+    }
+    /* .email{
+            
+    }
+    .pswd{
+
+    } */
+  

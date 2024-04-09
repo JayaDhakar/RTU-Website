@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOG IN</title>
+    <!-- <link rel="stylesheet" href="RTU_STYLE.css"> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+      }
+      .hero {
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+      }
+      .form-box {
+        width: 380px;
+        height: 480px;
+        position: relative;
+        margin: 2.3% auto;
+        background: rgb(231, 229, 229);
+        padding: 5px;
+        overflow: hidden;
+      }
+      .close-btn {
+        float: right;
+        cursor: pointer;
+        transition: transform 0.2s;
+        /* width: 20px;
+        height: 20px; */
+      }
+      .close-btn:hover {
+        color: black;
+        transform: scale(1.2);
+      }
+      .heading {
+        text-align: center;
+        margin: 4px auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .button-box {
+        width: 220px;
+        margin: 35px auto;
+        position: relative;
+        box-shadow: 0 0 20px 9px #ff61241f;
+        border-radius: 30px;
+      }
+      .toggle-btn {
+        padding: 10px 30px;
+        cursor: pointer;
+        background: transparent;
+        border: 0;
+        outline: none;
+        position: relative;
+      }
+      #btn {
+        top: 0;
+        left: 0;
+        position: absolute;
+        width: 110px;
+        height: 100%;
+        background: linear-gradient(to right, #ff105f, #ffad06);
+        border-radius: 30px;
+        transition: 0.5s;
+      }
+      .social-icons {
+        margin: 30px auto;
+        text-align: center;
+      }
+      .social-icons img {
+        width: 30px;
+        margin: 0 12px;
+        box-shadow: 0 0 20px 0 #7f7f7f3d;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+      .input-group {
+        top: 180px;
+        position: absolute;
+        width: 280px;
+        transition: 0.5s;
+      }
+      .input-field {
+        width: 100%;
+        padding: 10px 0;
+        margin: 5px 0;
+        border-left: 0;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 1px solid #999;
+        outline: none;
+        background: transparent;
+      }
+      .submit-btn {
+        width: 85%;
+        padding: 10px 30px;
+        cursor: pointer;
+        display: block;
+        margin: auto;
+        background: linear-gradient(to right, #ff105f, #ffad06);
+        border: 0;
+        outline: none;
+        border-radius: 30px;
+      }
+      .icon {
+        display: flex;
+        height: 20px;
+        width: 20px;
+        float: right;
+      }
+      .chechbox {
+        margin: 30px 10px 30px 0;
+      }
+      span {
+        color: #777;
+        font-size: 12px;
+        bottom: 68px;
+        position: absolute;
+      }
+      .register {
+        margin: 210px 0 0 70px;
+        /* text-align: center; */
+        color: #777;
+        font-size: 16px;
+      }
+      .register a {
+        text-decoration: none;
+        color: #6c6b6b;
+        font-weight: 600;
+      }
+      /* #admin{
+
+      }
+      #user{
+
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <label for="" class="close-btn"
+          ><img src="/RTU/assets/close_FILL0_wght400_GRAD0_opsz24.png"
+        /></label>
+        <h1 class="heading">Log In</h1>
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="admin()">
+            ADMIN
+          </button>
+          <button type="button" class="toggle-btn" onclick="user()">
+            USER
+          </button>
+        </div>
+        <div class="social-icons">
+          <img src="/RTU/assets/icons8-google-48.png" />
+          <img src="/RTU/assets/instagram_4138124.png" />
+          <img src="/RTU/assets/twitter_2504839.png" />
+        </div>
+        <form id="admin" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <!-- <i class="icon"><img src="/RTU/assets/icons8-keyboard-30.png" alt="keyboard"></i> -->
+          <!-- </i><label>User Id</label> -->
+
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Password"
+            required
+          />
+          <!-- <i class="icon"><img src="/RTU/assets/icons8-lock-30.png"></i> -->
+          <!-- <label>Password</label> -->
+          <input type="checkbox" class="chechbox" /><span
+            >Remember Password</span
+          >
+          <button type="submit " class="submit-btn">Log In</button>
+        </form>
+        <form id="user" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User Id"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Password"
+            required
+          />
+          <input type="checkbox" class="chechbox" /><span
+            >Remember Password</span
+          >
+          <button type="submit " class="submit-btn">Log In</button>
+        </form>
+
+        <div class="register">
+          Dont't have an account?<a href="#">Register</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("admin");
+      var y = document.getElementById("user");
+      var z = document.getElementById("btn");
+
+      function user() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function admin() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+      }
+    </script>
+  </body>
+</html>
